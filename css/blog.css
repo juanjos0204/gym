@@ -1,0 +1,27 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+  background-color: rgb(37, 47, 56);
+}
+.carousel-inner{
+  width:100%;
+  max-height: 640px !important;
+}
+#caract{
+  width: 100%;
+}
+.footer2 {
+  bottom: 0!important;
+  width: 100%!important;
+  /* Set the fixed height of the footer here */
+  height: 20px!important;
+  background-color:rgb(13%, 13%, 13%)!important;
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 20px;
+  background-color:rgb(13%, 13%, 13%)!important;
+}

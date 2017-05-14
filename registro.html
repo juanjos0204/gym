@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Metodologias</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-social.css" rel="stylesheet">
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/docs.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/registro.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+<body>
+<div class="container">
+        <form class="form-signin">
+          <h3 class="form-signin-heading" align="center">Formato de Registro</h3>
+          <label for="inputNombre" class="sr-only">Primer Nombre</label>
+          <input type="text" id="nombre" class="form-control" placeholder="Primer Nombre" required autofocus>
+          <label for="inputNombre2" class="sr-only">Segundo Nombre</label>
+          <input type="text" id="nombre2" class="form-control" placeholder="Segundo Nombre" required autofocus>
+          <label for="inputApellidos" class="sr-only">Apellido(s)</label>
+          <input type="text" id="apellido" class="form-control" placeholder="Apellido(s)" required autofocus>
+          <label for="inputFecha" class="sr-only">Fecha de Nacimiento</label>
+          <input type="date" id="fecha" class="form-control" placeholder="Fecha de Nacimiento" required autofocus>
+          <tr class="genero">
+          <td><label><input type="radio" name="genero" title="Genero" value="MASCULINO" id="genero_0">Masculino&nbsp;&nbsp;</label></td>
+          <td><label><input type="radio" name="genero" title="Genero" value="FEMENINO" id="genero_1">&nbsp;&nbsp;Femenino</label></td></tr>
+          <label for="inputEmail" class="sr-only">Telefono Fijo</label>
+          <input type="tel" id="inputEmail" class="form-control" placeholder="Telefono Fijo" required autofocus>
+          <label for="inputEmail" class="sr-only">Celular</label>
+          <input type="tel" id="inputEmail" class="form-control" placeholder="Celular" required autofocus>
+          <label for="inputEmail" class="sr-only">Email address</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+          <label for="inputPassword2" class="sr-only">Confirme Password</label>
+          <input type="password2" id="inputPassword" class="form-control" placeholder="Confirme Password" required>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="remember-me"> Acepto los terminos y condiciones.<a href="#" data-toggle="modal" data-target="#myModal">Ver terminos y condiciones</a>
+            </label>
+          </div>
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Terminos y Condiciones GYM</h4>
+                </div>
+                <div class="modal-body">
+                Ingresar texto "Terminos y Condiciones" AQUÍ
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</button>
+        </form>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
