@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Web Metodologias</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-social.css" rel="stylesheet">
   <link href="css/font-awesome.css" rel="stylesheet">
   <link href="css/docs.css" rel="stylesheet">
@@ -27,32 +27,32 @@
 </head>
 <body>
 <div class="container">
-        <form class="form-signin">
+        <form class="form-signin" action="conexion.php" method="post">
           <h3 class="form-signin-heading" align="center">Formato de Registro</h3>
-          <label for="inputNombre" class="sr-only">Primer Nombre</label>
-          <input type="text" id="nombre" class="form-control" placeholder="Primer Nombre" required autofocus>
-          <label for="inputNombre2" class="sr-only">Segundo Nombre</label>
-          <input type="text" id="nombre2" class="form-control" placeholder="Segundo Nombre" required autofocus>
-          <label for="inputApellidos" class="sr-only">Apellido(s)</label>
-          <input type="text" id="apellido" class="form-control" placeholder="Apellido(s)" required autofocus>
-          <label for="inputFecha" class="sr-only">Fecha de Nacimiento</label>
-          <input type="date" id="fecha" class="form-control" placeholder="Fecha de Nacimiento" required autofocus>
+          <label for="Usuario" class="sr-only">Nombre Usuario</label>
+          <input type="text" id="nombreUsuario" name="Usuario" class="form-control" placeholder="Nombre Usuario" required autofocus title="Ingrese nombre de usuario">
+          <label for="Nombre" class="sr-only">Nombre</label>
+          <input type="text" id="nombre" name="Nombre" class="form-control" placeholder="Nombre(s)" required autofocus title="Ingrese nombre">
+          <label for="apellido" class="sr-only">Apellido(s)</label>
+          <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Apellido(s)" required autofocus title="Ingresa Apellido o Apellidos">
+          <label for="fecha" class="sr-only">Fecha de Nacimiento</label>
+          <input type="date" id="fecha" name="fecha" class="form-control" placeholder="Fecha de Nacimiento" autofocus title="Ingresa Tu Fecha de Nacimiento">
           <tr class="genero">
-          <td><label><input type="radio" name="genero" title="Genero" value="MASCULINO" id="genero_0">Masculino&nbsp;&nbsp;</label></td>
-          <td><label><input type="radio" name="genero" title="Genero" value="FEMENINO" id="genero_1">&nbsp;&nbsp;Femenino</label></td></tr>
-          <label for="inputEmail" class="sr-only">Telefono Fijo</label>
-          <input type="tel" id="inputEmail" class="form-control" placeholder="Telefono Fijo" required autofocus>
-          <label for="inputEmail" class="sr-only">Celular</label>
-          <input type="tel" id="inputEmail" class="form-control" placeholder="Celular" required autofocus>
-          <label for="inputEmail" class="sr-only">Email address</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-          <label for="inputPassword2" class="sr-only">Confirme Password</label>
-          <input type="password2" id="inputPassword" class="form-control" placeholder="Confirme Password" required>
+          <td><label><input type="radio" name="genero" title="Genero Masculino" name="Masculino" value="MASCULINO" autofocus id="genero_0">Masculino&nbsp;&nbsp;</label></td>
+          <td><label><input type="radio" name="genero" title="Genero Femenino" name="Femenino" value="FEMENINO" autofocus id="genero_1">&nbsp;&nbsp;Femenino</label></td></tr>
+          <label for="Telefono" class="sr-only">Telefono Fijo</label>
+          <input type="tel" id="inputTel" name="Telefono" class="form-control" placeholder="Telefono Fijo" required autofocus title="Ingresa Número Telefónico Fijo">
+          <label for="Celular" class="sr-only">Celular</label>
+          <input type="tel" id="inputCel" name="Celular" class="form-control" placeholder="Celular" required autofocus title="Ingresa Número Celular">
+          <label for="Email" class="sr-only">Email address</label>
+          <input type="email" id="inputEmail" name="Email" class="form-control" placeholder="Dirección De Correo Electrónico" required autofocus title="Ingresa Tu Correo Electrónico">
+          <label for="Password" class="sr-only">Password</label>
+          <input type="password" id="inputPassword" name="Password" class="form-control" placeholder="Password" required autofocus title="Ingrese Una Contraseña">
+          <label for="Repassword" class="sr-only">Confirme Password</label>
+          <input type="password" id="inputPassword2" name="Repassword" class="form-control" placeholder="Confirme Password" required autofocus title="Ingrese Nuevamente Su Contraseña">
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="remember-me"> Acepto los terminos y condiciones.<a href="#" data-toggle="modal" data-target="#myModal">Ver terminos y condiciones</a>
+              <input type="checkbox" autofocus="" title="Aceptar terminos y condiciones" name="Acepto" value="terminos"> Acepto los terminos y condiciones.<a href="#" data-toggle="modal" data-target="#myModal">Ver terminos y condiciones</a>
             </label>
           </div>
           <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -68,8 +68,9 @@
               </div>
             </div>
           </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</button>
+          <button class="btn btn-lg btn-primary btn-block" type="submit" name="enviar" value="registrar">Registrarse</button>
         </form>
+      </div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
